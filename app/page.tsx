@@ -8,26 +8,26 @@ export default function Home() {
       title: "AI ORDERS APP",
       stack: "Next.js 14, TS, Firebase, Groq AI",
       desc: "WhatsApp Bot for automated ordering.",
-      link: "#",
+      link: "https://lebenhq.vercel.app/",
     },
     {
       title: "DIGITAL MENU",
       stack: "Next.js 15, Supabase, Framer Motion",
       desc: "Interactive menu with admin panel.",
-      link: "#",
+      link: "https://leben-menu.vercel.app/",
     },
     {
       title: "CESC LANDING",
       stack: "Next.js 15+, GSAP, Supabase",
       desc: "High-performance landing page.",
-      link: "#",
+      link: "https://cesc.vercel.app/",
     },
   ];
 
   const experience = [
     { role: "ENCARGADO", company: "LEBEN BREWING CO.", period: "2024-2025" },
-    { role: "CADISTA", company: "AM AGRIMENSURA", period: "2023-2024" },
     { role: "LOGISTICS", company: "PEPSICO", period: "2018-2019" },
+    { role: "CADISTA", company: "AM AGRIMENSURA", period: "2014-2017" },
   ];
 
   const skills = ["React", "Next.js", "TypeScript", "SQL", "HTML/CSS", "Git", "Adobe Suite", "AutoCAD"];
@@ -37,7 +37,7 @@ export default function Home() {
       {/* HEADER / MARQUEE */}
       <header className="border-b-4 border-white overflow-hidden whitespace-nowrap bg-accent text-white py-2">
         <div className="inline-block animate-marquee font-bold text-xl">
-          AVAILABLE FOR WORK — SANTIAGO RISSO — FULL STACK DEVELOPER — ARGENTINA — AVAILABLE FOR WORK — SANTIAGO RISSO — FULL STACK DEVELOPER — ARGENTINA —
+          AVAILABLE FOR WORK — FULL STACK DEVELOPER — ARGENTINA — AVAILABLE FOR WORK— FULL STACK DEVELOPER — ARGENTINA —
         </div>
       </header>
 
@@ -69,14 +69,20 @@ export default function Home() {
         </div>
         <div className="grid grid-rows-3">
           {projects.map((p, i) => (
-            <div key={i} className={`p-6 border-white hover:bg-accent hover:text-white transition-colors group cursor-pointer ${i !== projects.length - 1 ? 'border-b-4' : ''}`}>
+            <Link 
+              key={i} 
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`block p-6 border-white hover:bg-accent hover:text-white transition-colors group cursor-pointer ${i !== projects.length - 1 ? 'border-b-4' : ''}`}
+            >
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-2xl font-bold uppercase group-hover:underline decoration-4 underline-offset-4">{p.title}</h3>
                 <ArrowUpRight className="w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               <p className="font-mono text-xs mb-2 opacity-80">{p.stack}</p>
               <p className="text-sm font-bold">{p.desc}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

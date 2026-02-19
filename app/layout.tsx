@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Santiago Risso | Full Stack Developer",
-  description: "Portfolio of Santiago Risso - Web Brutalism",
+  description: "Portfolio of Santiago Risso",
 };
 
 export default function RootLayout({
