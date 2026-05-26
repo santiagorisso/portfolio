@@ -5,21 +5,21 @@ import { ArrowUpRight } from 'lucide-react';
 export default function Home() {
   const projects = [
     {
-      title: "AI ORDERS APP",
+      title: "BAR ORDERS APP",
       stack: "Next.js 14, TS, Firebase, Groq AI",
-      desc: "WhatsApp Bot for automated ordering.",
+      desc: "App for managing bar inventory and orders.",
       link: "https://lebenhq.vercel.app/",
     },
     {
-      title: "DIGITAL MENU",
-      stack: "Next.js 15, Supabase, Framer Motion",
-      desc: "Interactive menu with admin panel.",
-      link: "https://leben-menu.vercel.app/",
+      title: "GEOGESTION",
+      stack: "Next.js, Tailwind CSS",
+      desc: "SaaS for managing surveying study data.",
+      link: "https://geogestion.online",
     },
     {
       title: "CESC LANDING",
       stack: "Next.js 15+, GSAP, Supabase",
-      desc: "High-performance landing page.",
+      desc: "High-performance landing page for Centro de Ex Combatientes de Malvinas.",
       link: "https://cesc.vercel.app/",
     },
   ];
@@ -30,7 +30,7 @@ export default function Home() {
     { role: "CADISTA", company: "AM AGRIMENSURA", period: "2014-2017" },
   ];
 
-  const skills = ["React", "Next.js", "TypeScript", "SQL", "HTML/CSS", "Git", "Adobe Suite", "AutoCAD"];
+  const skills = ["React", "Next.js", "TypeScript", "SQL", "HTML/CSS", "Git", "Adobe Suite", "AutoCAD", "Prompting", "AI Dev"];
 
   return (
     <main className="min-h-screen border-x-4 border-white container mx-auto bg-background text-foreground flex flex-col">
