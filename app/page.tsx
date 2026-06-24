@@ -6,7 +6,7 @@ export default function Home() {
   const projects = [
     {
       title: "BAR ORDERS APP",
-      stack: "Next.js 14, TS, Firebase, Groq AI",
+      stack: "Next.js 14, TS, Firebase",
       desc: "App for managing bar inventory and orders.",
       link: "https://lebenhq.vercel.app/",
     },
@@ -25,9 +25,10 @@ export default function Home() {
   ];
 
   const experience = [
-    { role: "ENCARGADO", company: "LEBEN BREWING CO.", period: "2024-2025" },
+    { role: "ENCARGADO", company: "LEBEN BREWING CO.", period: "2024-2026" },
+    { role: "CADISTA", company: "AM AGRIMENSURA", period: "2022-2024" },
     { role: "LOGISTICS", company: "PEPSICO", period: "2018-2019" },
-    { role: "CADISTA", company: "AM AGRIMENSURA", period: "2014-2017" },
+    { role: "CADISTA", company: "JORGE BENITO MARTIN & ASOC.", period: "2014-2017" },
   ];
 
   const skills = ["React", "Next.js", "TypeScript", "SQL", "HTML/CSS", "Git", "Adobe Suite", "AutoCAD", "Prompting", "AI Dev"];
@@ -37,7 +38,7 @@ export default function Home() {
       {/* HEADER / MARQUEE */}
       <header className="border-b-4 border-white overflow-hidden whitespace-nowrap bg-accent text-white py-2">
         <div className="inline-block animate-marquee font-bold text-xl">
-          AVAILABLE FOR WORK — FULL STACK DEVELOPER — ARGENTINA — AVAILABLE FOR WORK— FULL STACK DEVELOPER — ARGENTINA —
+          AVAILABLE FOR WORK — FULL STACK DEVELOPER — ARGENTINA — AVAILABLE FOR WORK— FULL STACK DEVELOPER — ARGENTINA — AVAILABLE FOR WORK— FULL STACK DEVELOPER — ARGENTINA — 
         </div>
       </header>
 
@@ -56,7 +57,7 @@ export default function Home() {
           <a href="https://github.com/santiagorisso" target="_blank" className="hover:bg-accent hover:text-white px-2 py-1 border-2 border-white transition-colors">
             GITHUB
           </a>
-          <a href="https://linkedin.com/in/santiago-risso-144641195" target="_blank" className="hover:bg-accent hover:text-white px-2 py-1 border-2 border-white transition-colors">
+          <a href="https://linkedin.com/in/santiago-risso1" target="_blank" className="hover:bg-accent hover:text-white px-2 py-1 border-2 border-white transition-colors">
             LINKEDIN
           </a>
         </div>
